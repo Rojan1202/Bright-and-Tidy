@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Services &amp; Pricing | Bright &amp; Tidy Cleaning Services</title>
+<meta name="description" content="Domestic, office, deep, and end-of-tenancy cleaning services. Use our instant quote calculator to estimate your price.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@500;600&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to main content</a>
+
+<header class="site-header">
+  <nav class="nav-bar" aria-label="Primary">
+    <a class="logo" href="index.html"><span class="dot">●</span> Bright &amp; Tidy</a>
+    <button class="nav-toggle" aria-expanded="false" aria-controls="primary-nav" aria-label="Toggle navigation menu">
+      <span class="bar"></span><span class="bar"></span><span class="bar"></span>
+    </button>
+    <ul class="nav-links" id="primary-nav">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="services.html" aria-current="page">Services</a></li>
+      <li><a href="gallery.html">Gallery &amp; Reviews</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main id="main">
+  <section class="hero" style="padding-bottom:90px;">
+    <div class="container">
+      <p class="section-eyebrow" style="color:#F4B942;">Services &amp; pricing</p>
+      <h1 style="color:#fff;">Clear services, honest pricing.</h1>
+      <p class="lead">Pick the clean that fits, or use the calculator below for an instant estimate before you request a quote.</p>
+    </div>
+  </section>
+  <div class="diagonal-divider" aria-hidden="true"></div>
+
+  <section>
+    <div class="container">
+      <div class="card-grid">
+        <div class="card">
+          <div class="icon" aria-hidden="true">🏠</div>
+          <h3>Domestic Cleaning</h3>
+          <p class="price">From £18/hr</p>
+          <p>Kitchens, bathrooms, dusting, vacuuming and mopping. Weekly, fortnightly, or one-off.</p>
+        </div>
+        <div class="card">
+          <div class="icon" aria-hidden="true">🏢</div>
+          <h3>Office Cleaning</h3>
+          <p class="price">From £22/hr</p>
+          <p>Desks, kitchens, washrooms and communal areas, scheduled around your working hours.</p>
+        </div>
+        <div class="card">
+          <div class="icon" aria-hidden="true">🔑</div>
+          <h3>End of Tenancy</h3>
+          <p class="price">From £26/hr</p>
+          <p>Checklist-based deep clean covering appliances, skirting boards and cupboards inside and out.</p>
+        </div>
+        <div class="card">
+          <div class="icon" aria-hidden="true">✨</div>
+          <h3>Deep Clean</h3>
+          <p class="price">From £24/hr</p>
+          <p>A thorough top-to-bottom reset — ideal after renovation work or before a big event.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="alt-bg">
+    <div class="container">
+      <p class="section-eyebrow">Instant estimate</p>
+      <h2 class="section-heading">Get a ballpark price in seconds</h2>
+      <p>This gives a quick estimate only — your final price is confirmed after a short, free walk-through (in person or by video call).</p>
+
+      <form id="quote-calculator" class="calc-box" novalidate>
+        <div class="field">
+          <label for="serviceType">Type of clean</label>
+          <select id="serviceType" name="serviceType" required>
+            <option value="" disabled selected>Choose a service</option>
+            <option value="domestic">Domestic Cleaning</option>
+            <option value="office">Office Cleaning</option>
+            <option value="endOfTenancy">End of Tenancy</option>
+            <option value="deep">Deep Clean</option>
+          </select>
+        </div>
+        <div class="field">
+          <label for="rooms">Number of rooms (inc. bathrooms/kitchen)</label>
+          <input type="number" id="rooms" name="rooms" min="1" max="20" value="3" required>
+        </div>
+        <button type="submit" class="btn btn-primary">Calculate Estimate</button>
+
+        <div class="calc-result" hidden>
+          <p style="margin:0 0 4px; font-weight:600;">Estimated price</p>
+          <p class="amount">£0</p>
+          <p class="breakdown" style="margin:0; font-size:0.88rem; color:#555;"></p>
+        </div>
+      </form>
+    </div>
+  </section>
+
+  <section class="cta-band">
+    <div class="container">
+      <h2>Happy with the estimate?</h2>
+      <p>Send us your details and we'll confirm availability and a final price.</p>
+      <a class="btn btn-primary" href="contact.html">Request a Quote</a>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <h4>Bright &amp; Tidy Cleaning</h4>
+        <p>Insured &amp; DBS-checked cleaners serving Stafford and the surrounding area.</p>
+      </div>
+      <div>
+        <h4>Explore</h4>
+        <p><a href="services.html">Services</a></p>
+        <p><a href="gallery.html">Gallery &amp; Reviews</a></p>
+        <p><a href="about.html">About Us</a></p>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <p><a href="tel:+441785000000">01785 000 000</a></p>
+        <p><a href="mailto:hello@brightandtidy.co.uk">hello@brightandtidy.co.uk</a></p>
+      </div>
+    </div>
+    <div class="footer-bottom">&copy; 2026 Bright &amp; Tidy Cleaning Services. Coursework project for TEE 413 — not a real business.</div>
+  </div>
+</footer>
+
+<script src="js/script.js"></script>
+</body>
+</html>
